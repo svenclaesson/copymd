@@ -1,0 +1,11 @@
+{
+  "name": "copymd",
+  "owner": { "name": "Sven Claesson" },
+  "plugins": [
+    {
+      "name": "copymd",
+      "source": "./",
+      "description": "Copy a Claude Code answer to the macOS clipboard as rendered Markdown, with links, tables and code intact"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "copymd",
+  "description": "Copy a Claude Code answer to the macOS clipboard as rendered Markdown, with links, tables and code intact",
+  "version": "1.0.0"
+}

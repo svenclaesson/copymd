@@ -1,0 +1,7 @@
+#!/bin/zsh
+# copymd <session-id> [n | ?]: put a Claude Code answer on the macOS clipboard as rendered Markdown.
+# osascript has no way to load a library, so the Markdown parser and the
+# script are fed to it as one program.
+set -eu
+dir=${0:A:h}
+{ cat "$dir/vendor/markdown-it.min.js"; print; cat "$dir/copymd.js" } | /usr/bin/osascript -l JavaScript - "$@"
